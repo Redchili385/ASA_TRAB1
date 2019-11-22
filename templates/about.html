@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Homepage - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/shop-homepage.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url_for('index') }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('cadastro') }}">Cadastrar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login') }}">Logar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <h1 class="my-4">Loja de Smartphones</h1>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Android</a>
+          <a href="#" class="list-group-item">IOS</a>
+          <a href="#" class="list-group-item">Outros</a>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+      <div class="col-lg-9">
+        <br><br>
+        <h1> Sobre Nós</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nunc porttitor sapien iaculis bibendum. Duis rutrum ullamcorper nibh ac finibus. Morbi in pretium ligula, vel ullamcorper felis. Curabitur eleifend tortor magna, quis lacinia enim feugiat a. Vestibulum maximus tempor odio, non elementum turpis tempus et. Proin euismod finibus orci ac blandit. Duis et felis facilisis, sollicitudin mi hendrerit, iaculis eros. In sed dui tellus. In egestas vehicula justo, sed faucibus arcu faucibus at. Praesent ante ipsum, imperdiet in commodo at, volutpat mollis mi. Nulla vestibulum lectus id ipsum hendrerit, sit amet dignissim augue tempus. Nam porttitor nisl ipsum, non volutpat quam laoreet ut. Sed sed purus at lacus ultrices facilisis.</p>
+        <p>Praesent volutpat nec lorem a blandit. Aliquam erat volutpat. Vivamus vel mi augue. Curabitur sit amet purus non enim tincidunt lobortis non a dolor. Morbi in molestie urna, eu blandit ante. Sed pulvinar at tortor a placerat. Nullam vitae metus lectus.</p>
+        <p>Nam euismod augue in aliquet blandit. Vivamus sed odio ut urna hendrerit laoreet. Quisque quis vehicula ipsum. Vivamus imperdiet id massa ac aliquet. Morbi finibus ante sed malesuada auctor. Maecenas quam velit, consectetur vel imperdiet sed, vestibulum id est. Vestibulum commodo, erat et imperdiet accumsan, turpis tortor scelerisque nisi, ut malesuada turpis orci sit amet felis. Sed eget mauris quis eros tincidunt dignissim ultricies eget est. Fusce pulvinar orci sed nisi semper, a congue dui pellentesque. Quisque sed convallis erat. Sed quis rhoncus orci. Maecenas et pretium erat, sit amet malesuada metus. Sed posuere ornare nisl, id ultricies mi efficitur vel.</p>
+        <p>Ut nibh dui, mollis porta dapibus sed, euismod ut tortor. Nam massa sapien, efficitur vitae dapibus vitae, dictum et enim. Vestibulum varius ultrices orci. Praesent metus ligula, ultricies nec ullamcorper et, pharetra at urna. Aenean blandit laoreet mattis. Proin in fermentum ipsum, vel imperdiet risus. Morbi tincidunt mi in ex malesuada, at hendrerit justo imperdiet. Curabitur fringilla erat diam, ut molestie dolor fringilla nec. Etiam metus dui, consequat et erat nec, ultricies fermentum velit. Mauris commodo ultricies magna quis faucibus.</p>
+        <p>Donec interdum dignissim libero non interdum. Ut volutpat sem velit, eu pretium justo facilisis non. Aenean sed mattis massa. Sed aliquam posuere turpis, eget convallis metus faucibus in. Pellentesque in semper lacus. Mauris nibh turpis, congue eget nunc vel, commodo porta odio. Cras venenatis augue nulla, vitae dignissim nisl sodales tempus. Proin dignissim nunc quis magna sodales consequat. Morbi nibh odio, efficitur eu sagittis ac, gravida non nulla. Mauris consectetur massa quam, ut malesuada ligula consequat in. Vivamus et dictum magna. Praesent consequat posuere tellus, eu ullamcorper massa ultricies ac. Maecenas metus lectus, viverra vitae risus non, condimentum dictum est. Pellentesque nisl urna, efficitur ac est in, auctor consequat ante. Fusce suscipit interdum urna eget suscipit.</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Smarthphone Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+
+</body>
+
+</html>
